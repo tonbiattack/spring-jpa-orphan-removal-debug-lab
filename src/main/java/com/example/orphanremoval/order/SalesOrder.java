@@ -20,7 +20,7 @@ public class SalesOrder {
 
     private String orderNumber;
 
-    @OneToMany(mappedBy = "salesOrder", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "salesOrder", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<SalesOrderLine> lines = new ArrayList<>();
 
     protected SalesOrder() {
