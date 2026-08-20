@@ -2,3 +2,4 @@ target/
 .idea/
 .vscode/
 .DS_Store
+docs/明細を削除したのにDBに残る：Spring Data JPAのorphanRemovalを実際にデバッグする.md
