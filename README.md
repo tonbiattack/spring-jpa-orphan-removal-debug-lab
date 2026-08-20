@@ -64,4 +64,4 @@ private List<SalesOrderLine> lines = new ArrayList<>();
 
 ## 関連資料
 
-調査過程は [docs/debugging-record.md](docs/debugging-record.md)、SQLで表したテーブル定義と削除処理は [docs/orphan-removal-model.sql](docs/orphan-removal-model.sql)、テスト実行ログは `docs/01-bug-reproduction.log` と `docs/02-fixed-verification.log`、公式資料の確認メモは [docs/references.md](docs/references.md) にあります。
+調査過程は [docs/debugging-record.md](docs/debugging-record.md)、SQLで表したテーブル定義と削除処理は [docs/orphan-removal-model.sql](docs/orphan-removal-model.sql)、`UPDATE ... sales_order_id = NULL` の挙動は [docs/hibernate-update-nullable-foreign-key.md](docs/hibernate-update-nullable-foreign-key.md)、テスト実行ログは `docs/01-bug-reproduction.log` と `docs/02-fixed-verification.log`、公式資料の確認メモは [docs/references.md](docs/references.md) にあります。
